@@ -1,3 +1,0 @@
-..\..\_release\ZLib.NET.dll
-obj\Release\ResolveAssemblyReference.cache
-obj\Release\ZLib.NET.dll
