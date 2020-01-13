@@ -64,8 +64,8 @@ namespace InfinityXplorer.Core
         {
             applicationRootPath = Path.GetDirectoryName(Application.ExecutablePath);
             dockingConfigFile = Path.Combine(applicationRootPath, dockingConfigFile);
-
-            gameDirectory = @"F:\Games.Mods\Program Files (x86)\Black Isle\BGII - SoA";
+        
+            gameDirectory = @"C:\GOG Games\Baldur's Gate 2";
             gameDirectory = gameDirectory.ToUpper();
 
             chitinKeyFile = Path.Combine(gameDirectory, "chitin.key");
