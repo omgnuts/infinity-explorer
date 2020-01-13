@@ -1,0 +1,4 @@
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\ZLib.NET.dll
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\ZLib\obj\Release\ZLib.csprojResolveAssemblyReference.cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\ZLib\obj\Release\ZLib.csproj.CoreCompileInputs.cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\ZLib\obj\Release\ZLib.NET.dll

@@ -1,0 +1,34 @@
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.csprojResolveAssemblyReference.cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.QAREViewer.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.QBCSViewer.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.QDLGViewer.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.FormResource.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.FormExplorer.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.FormWorkbench.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.Properties.Resources.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.QAREToolWin.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.ScrollPictureBox.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.csproj.GenerateResource.Cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.csproj.CoreCompileInputs.cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\license.txt
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\InfinityXplorer.exe
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\InfinityXplorer.pdb
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.exe
+F:\Games.Mods\Infinity\code\Infinity Xplorer\InfinityXplorer.Core\obj\Debug\InfinityXplorer.pdb
+E:\Gitspace\baldursgate-infinitycore-v2\_release\license.txt
+E:\Gitspace\baldursgate-infinitycore-v2\_release\InfinityXplorer.exe
+E:\Gitspace\baldursgate-infinitycore-v2\_release\InfinityXplorer.pdb
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.csprojResolveAssemblyReference.cache
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.QAREViewer.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.QBCSViewer.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.QDLGViewer.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.FormResource.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.FormExplorer.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.FormWorkbench.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.Properties.Resources.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.QAREToolWin.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.ResourceControls.ScrollPictureBox.resources
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.csproj.GenerateResource.Cache
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.Core.csproj.CoreCompileInputs.cache
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.exe
+E:\Gitspace\baldursgate-infinitycore-v2\InfinityXplorer.Core\obj\Debug\InfinityXplorer.pdb

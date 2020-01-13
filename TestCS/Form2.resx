@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>  HasItemEquipedReal("CBEMMOON",Player1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ReallyForceSpell(Player1,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player1,96604) // 'The Moonblade has not chosen you as its rightful owner.  It lashes out in rebellion.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",ONE_DAY)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  OR(5)
+    Global("CbMoonBladePlayer1","GLOBAL",1)
+    Global("CbMoonBladePlayer3","GLOBAL",1)
+    Global("CbMoonBladePlayer4","GLOBAL",1)
+    Global("CbMoonBladePlayer5","GLOBAL",1)
+    Global("CbMoonBladePlayer6","GLOBAL",1)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+  HasItemEquipedReal("CBEMMOON",Player2)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,ReallyForceSpell(Player2,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player2,96604) // 'The Moonblade has not chosen you as its rightful owner.  It lashes out in rebellion.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",ONE_DAY)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  OR(5)
+    Global("CbMoonBladePlayer1","GLOBAL",1)
+    Global("CbMoonBladePlayer2","GLOBAL",1)
+    Global("CbMoonBladePlayer4","GLOBAL",1)
+    Global("CbMoonBladePlayer5","GLOBAL",1)
+    Global("CbMoonBladePlayer6","GLOBAL",1)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+  HasItemEquipedReal("CBEMMOON",Player3)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,ReallyForceSpell(Player3,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player3,96604) // 'The Moonblade has not chosen you as its rightful owner.  It lashes out in rebellion.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",ONE_DAY)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  OR(5)
+    Global("CbMoonBladePlayer1","GLOBAL",1)
+    Global("CbMoonBladePlayer2","GLOBAL",1)
+    Global("CbMoonBladePlayer3","GLOBAL",1)
+    Global("CbMoonBladePlayer5","GLOBAL",1)
+    Global("CbMoonBladePlayer6","GLOBAL",1)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+  HasItemEquipedReal("CBEMMOON",Player4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,ReallyForceSpell(Player4,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player4,96604) // 'The Moonblade has not chosen you as its rightful owner.  It lashes out in rebellion.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",ONE_DAY)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  OR(5)
+    Global("CbMoonBladePlayer1","GLOBAL",1)
+    Global("CbMoonBladePlayer2","GLOBAL",1)
+    Global("CbMoonBladePlayer3","GLOBAL",1)
+    Global("CbMoonBladePlayer4","GLOBAL",1)
+    Global("CbMoonBladePlayer6","GLOBAL",1)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+  HasItemEquipedReal("CBEMMOON",Player5)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,ReallyForceSpell(Player5,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player5,96604) // 'The Moonblade has not chosen you as its rightful owner.  It lashes out in rebellion.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",ONE_DAY)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  OR(5)
+    Global("CbMoonBladePlayer1","GLOBAL",1)
+    Global("CbMoonBladePlayer2","GLOBAL",1)
+    Global("CbMoonBladePlayer3","GLOBAL",1)
+    Global("CbMoonBladePlayer4","GLOBAL",1)
+    Global("CbMoonBladePlayer5","GLOBAL",1)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+  HasItemEquipedReal("CBEMMOON",Player6)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,ReallyForceSpell(Player6,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player6,96604) // 'The Moonblade has not chosen you as its rightful owner.  It lashes out in rebellion.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",ONE_DAY)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  Global("CbMoonBladePlayer1","GLOBAL",0)
+  OR(20)
+    HasItemEquipedReal("CBMOONP2",Player1)
+    HasItemEquipedReal("CBMOONP3",Player1)
+    HasItemEquipedReal("CBMOONP4",Player1)
+    HasItemEquipedReal("CBMOONP5",Player1)
+    HasItemEquipedReal("CBMOONP6",Player1)
+    HasItemEquipedReal("CBMONP2b",Player1)
+    HasItemEquipedReal("CBMONP2c",Player1)
+    HasItemEquipedReal("CBMONP2d",Player1)
+    HasItemEquipedReal("CBMONP3b",Player1)
+    HasItemEquipedReal("CBMONP3c",Player1)
+    HasItemEquipedReal("CBMONP3d",Player1)
+    HasItemEquipedReal("CBMONP4b",Player1)
+    HasItemEquipedReal("CBMONP4c",Player1)
+    HasItemEquipedReal("CBMONP4d",Player1)
+    HasItemEquipedReal("CBMONP5b",Player1)
+    HasItemEquipedReal("CBMONP5c",Player1)
+    HasItemEquipedReal("CBMONP5d",Player1)
+    HasItemEquipedReal("CBMONP6b",Player1)
+    HasItemEquipedReal("CBMONP6c",Player1)
+    HasItemEquipedReal("CBMONP6d",Player1)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ReallyForceSpell(Player1,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player1,96605) // 'ElfSapate has not chosen you as its rightful owner.  The Moonblade rebels against you, and you should stop using the blade as quickly as you can.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",TWELVE_MINUTES)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  Global("CbMoonBladePlayer2","GLOBAL",0)
+  OR(20)
+    HasItemEquipedReal("CBMOONP1",Player2)
+    HasItemEquipedReal("CBMOONP3",Player2)
+    HasItemEquipedReal("CBMOONP4",Player2)
+    HasItemEquipedReal("CBMOONP5",Player2)
+    HasItemEquipedReal("CBMOONP6",Player2)
+    HasItemEquipedReal("CBMONP1b",Player2)
+    HasItemEquipedReal("CBMONP1c",Player2)
+    HasItemEquipedReal("CBMONP1d",Player2)
+    HasItemEquipedReal("CBMONP3b",Player2)
+    HasItemEquipedReal("CBMONP3c",Player2)
+    HasItemEquipedReal("CBMONP3d",Player2)
+    HasItemEquipedReal("CBMONP4b",Player2)
+    HasItemEquipedReal("CBMONP4c",Player2)
+    HasItemEquipedReal("CBMONP4d",Player2)
+    HasItemEquipedReal("CBMONP5b",Player2)
+    HasItemEquipedReal("CBMONP5c",Player2)
+    HasItemEquipedReal("CBMONP5d",Player2)
+    HasItemEquipedReal("CBMONP6b",Player2)
+    HasItemEquipedReal("CBMONP6c",Player2)
+    HasItemEquipedReal("CBMONP6d",Player2)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,ReallyForceSpell(Player2,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player2,96605) // 'ElfSapate has not chosen you as its rightful owner.  The Moonblade rebels against you, and you should stop using the blade as quickly as you can.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",TWELVE_MINUTES)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  Global("CbMoonBladePlayer3","GLOBAL",0)
+  OR(20)
+    HasItemEquipedReal("CBMOONP1",Player3)
+    HasItemEquipedReal("CBMOONP2",Player3)
+    HasItemEquipedReal("CBMOONP4",Player3)
+    HasItemEquipedReal("CBMOONP5",Player3)
+    HasItemEquipedReal("CBMOONP6",Player3)
+    HasItemEquipedReal("CBMONP2b",Player3)
+    HasItemEquipedReal("CBMONP2c",Player3)
+    HasItemEquipedReal("CBMONP2d",Player3)
+    HasItemEquipedReal("CBMONP1b",Player3)
+    HasItemEquipedReal("CBMONP1c",Player3)
+    HasItemEquipedReal("CBMONP1d",Player3)
+    HasItemEquipedReal("CBMONP4b",Player3)
+    HasItemEquipedReal("CBMONP4c",Player3)
+    HasItemEquipedReal("CBMONP4d",Player3)
+    HasItemEquipedReal("CBMONP5b",Player3)
+    HasItemEquipedReal("CBMONP5c",Player3)
+    HasItemEquipedReal("CBMONP5d",Player3)
+    HasItemEquipedReal("CBMONP6b",Player3)
+    HasItemEquipedReal("CBMONP6c",Player3)
+    HasItemEquipedReal("CBMONP6d",Player3)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,ReallyForceSpell(Player3,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player3,96605) // 'ElfSapate has not chosen you as its rightful owner.  The Moonblade rebels against you, and you should stop using the blade as quickly as you can.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",TWELVE_MINUTES)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  Global("CbMoonBladePlayer4","GLOBAL",0)
+  OR(20)
+    HasItemEquipedReal("CBMOONP1",Player4)
+    HasItemEquipedReal("CBMOONP2",Player4)
+    HasItemEquipedReal("CBMOONP3",Player4)
+    HasItemEquipedReal("CBMOONP5",Player4)
+    HasItemEquipedReal("CBMOONP6",Player4)
+    HasItemEquipedReal("CBMONP2b",Player4)
+    HasItemEquipedReal("CBMONP2c",Player4)
+    HasItemEquipedReal("CBMONP2d",Player4)
+    HasItemEquipedReal("CBMONP3b",Player4)
+    HasItemEquipedReal("CBMONP3c",Player4)
+    HasItemEquipedReal("CBMONP3d",Player4)
+    HasItemEquipedReal("CBMONP1b",Player4)
+    HasItemEquipedReal("CBMONP1c",Player4)
+    HasItemEquipedReal("CBMONP1d",Player4)
+    HasItemEquipedReal("CBMONP5b",Player4)
+    HasItemEquipedReal("CBMONP5c",Player4)
+    HasItemEquipedReal("CBMONP5d",Player4)
+    HasItemEquipedReal("CBMONP6b",Player4)
+    HasItemEquipedReal("CBMONP6c",Player4)
+    HasItemEquipedReal("CBMONP6d",Player4)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,ReallyForceSpell(Player4,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player4,96605) // 'ElfSapate has not chosen you as its rightful owner.  The Moonblade rebels against you, and you should stop using the blade as quickly as you can.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",TWELVE_MINUTES)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  Global("CbMoonBladePlayer5","GLOBAL",0)
+  OR(20)
+    HasItemEquipedReal("CBMOONP1",Player5)
+    HasItemEquipedReal("CBMOONP2",Player5)
+    HasItemEquipedReal("CBMOONP3",Player5)
+    HasItemEquipedReal("CBMOONP4",Player5)
+    HasItemEquipedReal("CBMOONP6",Player5)
+    HasItemEquipedReal("CBMONP2b",Player5)
+    HasItemEquipedReal("CBMONP2c",Player5)
+    HasItemEquipedReal("CBMONP2d",Player5)
+    HasItemEquipedReal("CBMONP3b",Player5)
+    HasItemEquipedReal("CBMONP3c",Player5)
+    HasItemEquipedReal("CBMONP3d",Player5)
+    HasItemEquipedReal("CBMONP4b",Player5)
+    HasItemEquipedReal("CBMONP4c",Player5)
+    HasItemEquipedReal("CBMONP4d",Player5)
+    HasItemEquipedReal("CBMONP1b",Player5)
+    HasItemEquipedReal("CBMONP1c",Player5)
+    HasItemEquipedReal("CBMONP1d",Player5)
+    HasItemEquipedReal("CBMONP6b",Player5)
+    HasItemEquipedReal("CBMONP6c",Player5)
+    HasItemEquipedReal("CBMONP6d",Player5)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,ReallyForceSpell(Player5,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player5,96605) // 'ElfSapate has not chosen you as its rightful owner.  The Moonblade rebels against you, and you should stop using the blade as quickly as you can.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",TWELVE_MINUTES)
+END
+
+IF
+  Global("CbTempMoonBlade","GLOBAL",1)
+  Global("CbMoonBladePlayer6","GLOBAL",0)
+  OR(20)
+    HasItemEquipedReal("CBMOONP1",Player6)
+    HasItemEquipedReal("CBMOONP2",Player6)
+    HasItemEquipedReal("CBMOONP3",Player6)
+    HasItemEquipedReal("CBMOONP4",Player6)
+    HasItemEquipedReal("CBMOONP5",Player6)
+    HasItemEquipedReal("CBMONP2b",Player6)
+    HasItemEquipedReal("CBMONP2c",Player6)
+    HasItemEquipedReal("CBMONP2d",Player6)
+    HasItemEquipedReal("CBMONP3b",Player6)
+    HasItemEquipedReal("CBMONP3c",Player6)
+    HasItemEquipedReal("CBMONP3d",Player6)
+    HasItemEquipedReal("CBMONP4b",Player6)
+    HasItemEquipedReal("CBMONP4c",Player6)
+    HasItemEquipedReal("CBMONP4d",Player6)
+    HasItemEquipedReal("CBMONP5b",Player6)
+    HasItemEquipedReal("CBMONP5c",Player6)
+    HasItemEquipedReal("CBMONP5d",Player6)
+    HasItemEquipedReal("CBMONP1b",Player6)
+    HasItemEquipedReal("CBMONP1c",Player6)
+    HasItemEquipedReal("CBMONP1d",Player6)
+  !GlobalTimerNotExpired("CbMoonBladeDamage","GLOBAL")
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,ReallyForceSpell(Player6,FIFTY_PERCENT_DAMAGE))
+    DisplayStringHead(Player6,96605) // 'ElfSapate has not chosen you as its rightful owner.  The Moonblade rebels against you, and you should stop using the blade as quickly as you can.'
+    SetGlobalTimer("CbMoonBladeDamage","GLOBAL",TWELVE_MINUTES)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",3)
+  HasItemEquipedReal("CBMOONP1",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",4)
+    DisplayStringHeadOwner("CBMOONP1",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP1b","CBMOONP1",Player1)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",6)
+  HasItemEquipedReal("CBMONP1b",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",7)
+    DisplayStringHeadOwner("CBMONP1b",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP1c","CBMONP1b",Player1)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",10)
+  HasItemEquipedReal("CBMONP1c",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",11)
+    DisplayStringHeadOwner("CBMONP1c",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP1d","CBMONP1c",Player1)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",3)
+  HasItemEquipedReal("CBMOONP2",Player2)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",4)
+    DisplayStringHeadOwner("CBMOONP2",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP2b","CBMOONP2",Player2)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",6)
+  HasItemEquipedReal("CBMONP2b",Player2)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",7)
+    DisplayStringHeadOwner("CBMONP2b",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP2c","CBMONP2b",Player2)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",10)
+  HasItemEquipedReal("CBMONP2c",Player2)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",11)
+    DisplayStringHeadOwner("CBMONP2c",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP2d","CBMONP2c",Player2)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",3)
+  HasItemEquipedReal("CBMOONP3",Player3)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",4)
+    DisplayStringHeadOwner("CBMOONP3",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP3b","CBMOONP3",Player3)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",6)
+  HasItemEquipedReal("CBMONP3b",Player3)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",7)
+    DisplayStringHeadOwner("CBMONP3b",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP3c","CBMONP3b",Player3)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",10)
+  HasItemEquipedReal("CBMONP3c",Player3)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",11)
+    DisplayStringHeadOwner("CBMONP3c",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP3d","CBMONP3c",Player3)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",3)
+  HasItemEquipedReal("CBMOONP4",Player4)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",4)
+    DisplayStringHeadOwner("CBMOONP4",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP4b","CBMOONP4",Player4)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",6)
+  HasItemEquipedReal("CBMONP4b",Player4)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",7)
+    DisplayStringHeadOwner("CBMONP4b",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP4c","CBMONP4b",Player4)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",10)
+  HasItemEquipedReal("CBMONP4c",Player4)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",11)
+    DisplayStringHeadOwner("CBMONP4c",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP4d","CBMONP4c",Player4)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",3)
+  HasItemEquipedReal("CBMOONP5",Player5)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",4)
+    DisplayStringHeadOwner("CBMOONP5",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP5b","CBMOONP5",Player5)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",6)
+  HasItemEquipedReal("CBMONP5b",Player5)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",7)
+    DisplayStringHeadOwner("CBMONP5b",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP5c","CBMONP5b",Player5)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",10)
+  HasItemEquipedReal("CBMONP5c",Player5)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",11)
+    DisplayStringHeadOwner("CBMONP5c",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP5d","CBMONP5c",Player5)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",3)
+  HasItemEquipedReal("CBMOONP6",Player6)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",4)
+    DisplayStringHeadOwner("CBMOONP6",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP6b","CBMOONP6",Player6)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",6)
+  HasItemEquipedReal("CBMONP6b",Player6)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",7)
+    DisplayStringHeadOwner("CBMONP6b",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP6c","CBMONP6b",Player6)
+END
+
+IF
+  Global("CbMoonBladeAbilities","GLOBAL",10)
+  HasItemEquipedReal("CBMONP6c",Player6)
+THEN
+  RESPONSE #100
+    SetGlobal("CbMoonBladeAbilities","GLOBAL",11)
+    DisplayStringHeadOwner("CBMONP6c",'ElfSapate has chosen you as a valorous and honorable weilder, and one of the Moonblade's dormant powers is released.')
+    TakeItemReplace("CBMONP6d","CBMONP6c",Player6)
+END
+
+IF
+  HPGT(Player1,10)
+  Global("CbPlayer1DiseasedByCowl","GLOBAL",1)
+  GlobalTimerExpired("CbPlayer1DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer1DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player1,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player1,11)
+  Global("CbPlayer1DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer1DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer1DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player1,WIZARD_COWLED_VD)
+    ApplySpell(Player1,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player1,12)
+  GlobalGT("CbPlayer1DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer1DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer1DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player1,WIZARD_COWLED_VD)
+    ApplySpell(Player1,WIZARD_COWLED_VD)
+    ApplySpell(Player1,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player2,10)
+  Global("CbPlayer2DiseasedByCowl","GLOBAL",1)
+  GlobalTimerExpired("CbPlayer2DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer2DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player2,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player2,11)
+  Global("CbPlayer2DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer2DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer2DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player2,WIZARD_COWLED_VD)
+    ApplySpell(Player2,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player2,12)
+  GlobalGT("CbPlayer2DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer2DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer2DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player2,WIZARD_COWLED_VD)
+    ApplySpell(Player2,WIZARD_COWLED_VD)
+    ApplySpell(Player2,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player3,10)
+  Global("CbPlayer3DiseasedByCowl","GLOBAL",1)
+  GlobalTimerExpired("CbPlayer3DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer3DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player3,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player3,11)
+  Global("CbPlayer3DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer3DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer3DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player3,WIZARD_COWLED_VD)
+    ApplySpell(Player3,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player3,12)
+  GlobalGT("CbPlayer3DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer3DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer3DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player3,WIZARD_COWLED_VD)
+    ApplySpell(Player3,WIZARD_COWLED_VD)
+    ApplySpell(Player3,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player4,10)
+  Global("CbPlayer4DiseasedByCowl","GLOBAL",1)
+  GlobalTimerExpired("CbPlayer4DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer4DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player4,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player4,11)
+  Global("CbPlayer4DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer4DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer4DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player4,WIZARD_COWLED_VD)
+    ApplySpell(Player4,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player4,12)
+  GlobalGT("CbPlayer4DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer4DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer4DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player4,WIZARD_COWLED_VD)
+    ApplySpell(Player4,WIZARD_COWLED_VD)
+    ApplySpell(Player4,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player5,10)
+  Global("CbPlayer5DiseasedByCowl","GLOBAL",1)
+  GlobalTimerExpired("CbPlayer5DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer5DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player5,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player5,11)
+  Global("CbPlayer5DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer5DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer5DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player5,WIZARD_COWLED_VD)
+    ApplySpell(Player5,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player5,12)
+  GlobalGT("CbPlayer5DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer5DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer5DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player5,WIZARD_COWLED_VD)
+    ApplySpell(Player5,WIZARD_COWLED_VD)
+    ApplySpell(Player5,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player6,10)
+  Global("CbPlayer6DiseasedByCowl","GLOBAL",1)
+  GlobalTimerExpired("CbPlayer6DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer6DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player6,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player6,11)
+  Global("CbPlayer6DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer6DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer6DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player6,WIZARD_COWLED_VD)
+    ApplySpell(Player6,WIZARD_COWLED_VD)
+END
+
+IF
+  HPGT(Player6,12)
+  GlobalGT("CbPlayer6DiseasedByCowl","GLOBAL",2)
+  GlobalTimerExpired("CbPlayer6DiseasedDay","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CbPlayer6DiseasedDay","GLOBAL",ONE_DAY)
+    ApplySpell(Player6,WIZARD_COWLED_VD)
+    ApplySpell(Player6,WIZARD_COWLED_VD)
+    ApplySpell(Player6,WIZARD_COWLED_VD)
+END
+
+IF
+  Global("CBMALR1","GLOBAL",1)
+  !Exists("CBMALR1X")
+THEN
+  RESPONSE #100
+    CreateCreatureOffScreen("CBMALR1X",0)
+END
+
+IF
+  Global("CBMALR1","GLOBAL",0)
+  Exists("CBMALR1X")
+THEN
+  RESPONSE #100
+    ActionOverride("CBMALR1X",DestroySelf())
+END
+
+IF
+  PartyHasItemIdentified("CBMALR6a")
+  GlobalGT("CbMalteseArtifact","GLOBAL",4)
+  GlobalGT("SPRITE_IS_DEADCBMALR1","GLOBAL",0)
+  Global("CbMalteseJournals","GLOBAL",0)
+  OR(3)
+    AreaCheck("AR1202")
+    AreaCheck("AR1401")
+    AreaCheck("AR3570")
+THEN
+  RESPONSE #100
+    SetGlobal("CbMalteseJournals","GLOBAL",1)
+    SetGlobal("CbMalteseArtifact","GLOBAL",10)
+    AddJournalEntry(96607,QUEST_DONE) // 'Of Elves and Artifacts
+
+I have found a way to stop the mage Khaddyr from completing his permatration ritual.  What began as an elusive quest with a scared elfwoman is almost complete.  I have recovered the real Crown of Horns, but have not yet decided what should be done with it.  I could keep it, but it's evil would still exist in Faerûn.  Perhaps it would be best if the Crown were destroyed.'
+    EraseJournalEntry('Of Elves and Artifacts
+
+  I had a lengthy discussion with Eleanor, an elven mage who specializes in scholarly pursuits of ancient artifacts and magical items.  She is quite concerned with the ambitions of a mage who has employed her to research a theory known as permatration; which I had believed was just a myth.  Apparently this mage has come into an artifact which may allow him to perform a permatration ritual, and of course in the process causing widespread destruction.  Eleanor beseeched my aid, and has come up with a plan to foil the evil mage.
+  She thinks it best to create a duplicate copy of the artifact, one which is harmless.  I do not know if this is a good idea, but if I wish to construct such a counterfeit artifact, she has told me what items I would need to create such a fake.  The items are commonly found, and I would need a diamond, a Potion of Magic Protection, a scroll with the spell Enchanted Weapon, and any item containing greenstone.  If I find these items and want to have Eleanor create a counterfeit, she said she would contact me someplace in Athkatla.
+  Aside from duplicating the object, Eleanor told me where I could find the mage.  She was told that she could contact him in a dungeon below the Windspear Hills, where he has a laboratory where he conducts his experiements.  If all else fails, I could probably find him there to defeat his attempts to steal the life force of others to earn himself a god-hood.')
+    EraseJournalEntry('Of Elves and Artifacts
+
+After leaving the Temple of Waukeen in Trademeet, Eleanor was attacked by the mage she told me about.  He had a few bodyguards with him, but did not need them.  His magic was strong, much to strong for Eleanor, who was killed by the mage in an earnest spell battle for her very life.  I shall honor her sacrifice, and not let it be in vain.')
+    EraseJournalEntry('Of Elves and Artifacts
+
+I found the parts that Eleanor told me to collect in order to create a counterfeit Crown of Horns.  I brought them to my friend Cromwell, a master craftsman, but he was unable to create a duplicate.  I shall either have to have him try again, or find some other way of preventing the mage from attempting Permatration.')
+    EraseJournalEntry('Of Elves and Artifacts
+
+I found the items that Eleanor had told me about and brought them to my dwarf friend Cromwell.  He was able to create nearly an exact copy of the true Crown of Horns, and I will have to meet up with this mage.  Hopefully he will fall for the ruse.')
+    EraseJournalEntry('Of Elves and Artifacts
+
+  I had a lengthy discussion with Eleanor, an elven mage who specializes in scholarly pursuits of ancient artifacts and magical items.  She is quite concerned with the ambitions of a mage who has employed her to research a theory known as permatration; which I had believed was just a myth.  Apparently this mage has come into an artifact which may allow him to perform a permatration ritual, and of course in the process causing widespread destruction.  Eleanor beseeched my aid, and has come up with a plan to foil the evil mage.
+  She thinks it best to create a duplicate copy of the artifact, one which is harmless.  I do not know if this is a good idea, but if I wish to construct such a counterfeit artifact, she has told me what items I would need to create such a fake.  The items are commonly found, and I would need a diamond, a Potion of Magic Protection, a scroll with the spell Enchanted Weapon, and any item containing greenstone.  If I find these items and want to have Eleanor create a counterfeit, she said she would contact me someplace in Athkatla.
+  Aside from duplicating the object, Eleanor told me where I could find the mage.  She was told that she could contact him in a meadow near the Forest of Tethyr, where he keeps an underground laboratory to conduct his experiements.  If all else fails, I could probably find him there to defeat his attempts to steal the life force of others to earn himself a god-hood.')
+    EraseJournalEntry('Of Elves and Artifacts
+
+  I had a lengthy discussion with Eleanor, an elven mage who specializes in scholarly pursuits of ancient artifacts and magical items.  She is quite concerned with the ambitions of a mage who has employed her to research a theory known as permatration; which I had believed was just a myth.  Apparently this mage has come into an artifact which may allow him to perform a permatration ritual, and of course in the process causing widespread destruction.  Eleanor beseeched my aid, and has come up with a plan to foil the evil mage.
+  She thinks it best to create a duplicate copy of the artifact, one which is harmless.  I do not know if this is a good idea, but if I wish to construct such a counterfeit artifact, she has told me what items I would need to create such a fake.  The items are commonly found, and I would need a diamond, a Potion of Magic Protection, a scroll with the spell Enchanted Weapon, and any item containing greenstone.  If I find these items and want to have Eleanor create a counterfeit, she said she would contact me someplace in Athkatla.
+  Aside from duplicating the object, Eleanor told me where I could find the mage.  She was told that she could contact him in a dungeon near the Umar Hills, where he has a laboratory where he conducts his experiements.  If all else fails, I could probably find him there to defeat his attempts to steal the life force of others to earn himself a god-hood.')
+    EraseJournalEntry('Of Elves and Artifacts
+
+I have identified and received the magical message stored within the statuette given to my by an elf in the Bridge District.  The voice, apparently the elf's, was full of fear and terror, though did not yield many clues as to what the adventure that the elf alludes to.  All I know is that the elf woman may be in danger- and she mentions that the Sword Coast could also be in danger- and if I meet her in the Temple of Waukeen in Trademeet, she will try to explain further.  Perhaps I will, but I'd much rather know more about this elf woman first.')
+    EraseJournalEntry('Of Elves and Artifacts
+
+While walking through the Bridge District of Athkatla, an elf, whom I do not know, approached me with much trepidation.  She did not say anything, but surreptisiously dropped a small statuette into my pack.  I do not know why, yet I do not know what the properties of the statuette are yet.  I shall have to investigate it, and perhaps the elf may lead me to yet another adventure.')
+END
+
+IF
+  OR(12)
+    SpellCast([GOODCUTOFF],WIZARD_EAGLES_SPLENDOR)
+    SpellCast([GOODCUTOFF],WIZARD_DECASTAVE)
+    SpellCast([GOODCUTOFF],COM_CATS_GRACE)
+    SpellCast([GOODCUTOFF],WIZARD_MORDENKAINENS_FORCE_MISSILES)
+    SpellCast([GOODCUTOFF],WIZARD_BALL_LIGHTNING)
+    SpellCast([GOODCUTOFF],WIZARD_LUTZAENS_FREQUENT_JAUNT)
+    SpellCast([GOODCUTOFF],WIZARD_DARTS_OF_BONE)
+    SpellCast([GOODCUTOFF],WIZARD_ANTIMAGIC_FIELD)
+    SpellCast([GOODCUTOFF],WIZARD_LICH_TOUCH)
+    SpellCast([GOODCUTOFF],WIZARD_TROLLISH_FORTITUDE)
+    SpellCast([GOODCUTOFF],WIZARD_IRON_BODY)
+    SpellCast([GOODCUTOFF],WIZARD_MIND_BLANK)
+  Global("CbSelimCreated","GLOBAL",0)
+  !Global("CbSelimTurnsEnemy","GLOBAL",1)
+  AreaType(DUNGEON)
+THEN
+  RESPONSE #10</value>
+  </data>
+</root>

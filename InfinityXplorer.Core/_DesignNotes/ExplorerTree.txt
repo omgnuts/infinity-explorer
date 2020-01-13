@@ -1,0 +1,18 @@
+---------------------------
+// IXplorer Tree Structure
+---------------------------
+
+The tree structures are defined by the infinity engine's file types.
+Extensions can be made easily as the structure is contained within 
+the following files:
+
+- ResourceStruct.cs - defines the all the resource types
+
+Only need to edit ResourceStruct.cs to change more filetypes
+
+Further note that only the signatures identified in IIXTreeNode should have 
+public access. The rest of the methods in ResourceNodes should be kept in 
+private access.
+
+Need to do some checks to not reload the viewer if already active. 
+Unless inactive, load from cache if possible, else load from file. [ done]

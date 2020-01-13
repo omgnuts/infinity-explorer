@@ -1,0 +1,76 @@
+For the loader exception bug. you need to do three things
+
+(a) change the assembly info in the weifenluo. to say 2.2.2
+(b) delete the all <obj> directories in weifenluo & infinityX
+(c) if necessary, need to change code permissions using dotnet 2.0
+    configuration wizard found in controlpanel>admintools
+
+---------------------------------------------------------------------------------------------------------------------
+Change your AssemblyInfo.cs files in the UserControls DLLs as follows:
+[assembly: AssemblyVersion("5.5.5")]
+
+Where 5.5.5 is any hard-coded version number. The problem was the .* in it
+causing the UserControl to have an auto-generated version that's different
+than what your other DLL is expecting. As soon as you recompile it with
+changes or something, you get the Unable to Load error.
+
+---------------------------------------------------------------------------------------------------------------------
+Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information. 
+
+Sometimes when working with a solution containing multiple projects, with several forms some of them containing user controls, 
+Visual Studio .NET 2005 produces the following error when you try to open the form in the form designer:
+Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+In some cases the following approach helps solving this issue:
+Close the form designer
+Close the solution and Visual Studio
+From the project that contains the problematic form delete the bin and the obj folder
+Start Visual Studio again and load your solution
+Rebuild the solution
+Reload the form
+Not nice, but at least it's a workaround.
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+http://support.microsoft.com/kb/825007
+
+BUG: You cannot add a user control to a Windows Form in Visual Studio .NET 2003
+
+SYMPTOMS
+In Microsoft Visual Studio .NET 2003, you may be not be able to add a user control from the Toolbox to a Microsoft Windows Form. Additionally, when you open a Windows Form that contains a user control, or when you try to build a project that has a Windows Form that contains a user control, the user control may disappear. When this problem occurs, you may receive the following error messages in the Task List window:
+The variable VariableName is either undeclared or never assigned.
+
+
+Could not find Type Namespace.UserControlName. Please make sure the assembly that contains this type is referenced. If this is part of your development project make sure that it is properly built.
+A System.Runtime.Serialization.SerializationException exception error may also occur. The exception error message contains the following text:
+Insufficient state to deserialize the object. More information is needed.
+Note These error message examples use the following placeholders:
+•	VariableName is a placeholder for the name of the user control variable.
+•	Namespace is a placeholder for the name of the namespace that contains the user control class.
+•	UserControlName is a placeholder for the name of the user control class.
+Also, you may notice the error messages after you upgrade a Microsoft Visual Basic 6.0 project to Microsoft Visual Basic .NET 2003. And, this problem does not occur in Microsoft Visual Studio .NET 2002.
+
+Back to the top
+CAUSE
+Visual Studio .NET 2003 creates temporary files for project-level assemblies such as the assembly that contains the user control. These temporary files are located in the %APPDATA%\Microsoft\VisualStudio\7.1\ProjectAssemblies folder. Visual Studio .NET 2003 then loads the assemblies from the temporary files into memory. If you use folder redirection to redirect your Application Data folder to a folder that is not fully trusted, such as a network shared folder, Visual Studio .NET 2003 cannot load the assembly.
+
+Typically, the problem that is mentioned in the "Symptoms" section occurs if you are using a roaming user profile.
+
+Back to the top
+WORKAROUND
+Fully trust all files that are located in the ProjectAssemblies folder. To do this, follow these steps on your local computer:
+1.	Start the Microsoft .NET Framework 1.1 Configuration tool. The .NET Configuration 1.1 window opens.
+2.	In the left pane of the .NET Configuration 1.1 window, expand Runtime Security Policy, and then expand Machine.
+3.	Expand Code Groups, and then expand All_Code.
+4.	Right-click LocalIntranet_Zone, and then click New. The Create Code Group dialog box appears.
+5.	Click to select the Create a new code group option.
+6.	In the Name box, type MyCodeGroup, and then click Next.
+7.	In the Choose the condition type for this code group box, click URL.
+8.	To fully trust all files that are located in the ProjectAssemblies folder, type the following text in the URL box:
+file:////FolderPath\Microsoft\VisualStudio\7.1\ProjectAssemblies\*
+Note FolderPath is a placeholder for the path of the folder that you redirected the Application Data folder to.
+9.	Click Next.
+10.	In the Use existing permission set box, click FullTrust, and then click Next.
+11.	Click Finish.
+
+---------------------------------------------------------------------------------------------------------------------

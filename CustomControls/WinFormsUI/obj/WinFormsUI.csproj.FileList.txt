@@ -1,0 +1,13 @@
+..\..\_release\license.txt
+..\..\_release\DockPanel.NET.dll
+..\..\_release\DockPanel.NET.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\WeifenLuo.WinFormsUI.Docking.DockPanel.bmp
+obj\Release\WeifenLuo.WinFormsUI.Docking.Resources.resources
+obj\Release\WeifenLuo.WinFormsUI.Docking.Strings.resources
+obj\Release\WeifenLuo.WinFormsUI.Docking.DockContent.resources
+obj\Release\WeifenLuo.WinFormsUI.Docking.DragForm.resources
+obj\Release\WeifenLuo.WinFormsUI.Docking.FloatWindow.resources
+obj\Release\WinFormsUI.csproj.GenerateResource.Cache
+obj\Release\DockPanel.NET.dll
+obj\Release\DockPanel.NET.pdb

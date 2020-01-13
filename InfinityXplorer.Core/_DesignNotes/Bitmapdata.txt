@@ -1,0 +1,71 @@
+/// <summary>
+/// Create a gray gradient bar to represent the colors palette.
+/// </summary>
+private void MakeGrayColorPaletteBitmap()
+{
+	try 
+	{
+		int iWidth=this.Width;
+		if (iWidth<=0) iWidth=256;
+		int iHeight=this.Height;
+		if (iHeight<=0) iHeight=1;
+		Palette=new Bitmap(iWidth,iHeight, PixelFormat.Format8bppIndexed);
+
+		// Lock a rectangular portion of the bitmap for writing so we can
+		// fill this with a gradient value.
+
+		BitmapData bitmapData=null;
+		Rectangle rect = new Rectangle(0, 0, iWidth, iHeight);
+		try 
+		{
+			bitmapData =
+			Palette.LockBits(rect,ImageLockMode.WriteOnly,PixelFormat.Format8bppIndexed);
+
+			// Write to the temporary buffer that is provided by LockBits.
+			// Copy the pixels from the source image in this loop.
+			// Because you want an index, convert RGB to the appropriate
+			// palette index here.
+
+			IntPtr pixels = bitmapData.Scan0;
+			unsafe 
+			{
+				// Get the pointer to the image bits.
+				// This is the unsafe operation.
+				byte * pBits;
+				if (bitmapData.Stride > 0) 
+				{
+					pBits = (byte *)pixels.ToPointer();
+				} 
+				else 
+				{
+					// If the Stide is negative, Scan0 points to the last
+					// scanline in the buffer. To normalize the loop, obtain
+					// a pointer to the front of the buffer that is located
+					// (Height-1) scanlines previous.
+					pBits = (byte *)pixels.ToPointer() +
+					bitmapData.Stride*(Height-1);
+				}
+
+				uint stride = (uint)Math.Abs(bitmapData.Stride);
+				float fStep=(float)(256.0/Width);
+				for ( uint row = 0; row < Height; ++row ) 
+				{
+					for ( uint col = 0; col < Width; ++col ) 
+					{
+						byte * p8bppPixel = pBits + row*stride + col;
+						*p8bppPixel=(byte)(fStep*col);
+					}
+				}
+			}
+		} 
+		finally 
+		{
+			// To commit the changes, unlock the portion of the bitmap.
+			Palette.UnlockBits(bitmapData);
+		}
+	} 
+	catch 
+	{
+	}
+}
+}

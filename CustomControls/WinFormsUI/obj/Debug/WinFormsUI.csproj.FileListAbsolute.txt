@@ -1,0 +1,25 @@
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\license.txt
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\DockPanel.NET.dll
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\DockPanel.NET.pdb
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Resources.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Strings.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.DockContent.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.DragForm.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.FloatWindow.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\WinFormsUI.csproj.GenerateResource.Cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\WinFormsUI.csproj.CoreCompileInputs.cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\DockPanel.NET.dll
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Debug\DockPanel.NET.pdb
+E:\Gitspace\baldursgate-infinitycore-v2\_release\license.txt
+E:\Gitspace\baldursgate-infinitycore-v2\_release\DockPanel.NET.dll
+E:\Gitspace\baldursgate-infinitycore-v2\_release\DockPanel.NET.pdb
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\WinFormsUI.csprojResolveAssemblyReference.cache
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Resources.resources
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Strings.resources
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.DockContent.resources
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.DragForm.resources
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.FloatWindow.resources
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\WinFormsUI.csproj.GenerateResource.Cache
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\WinFormsUI.csproj.CoreCompileInputs.cache
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\DockPanel.NET.dll
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\WinFormsUI\obj\Debug\DockPanel.NET.pdb

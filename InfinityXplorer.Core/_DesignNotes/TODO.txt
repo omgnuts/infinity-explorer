@@ -1,0 +1,46 @@
+---------------
+framework
+---------------
+either choose to use GlobalDefs.runtime consistently or not at all
+probably to use Globaldefs.
+
+create loading box with a progress bar
+
+---------------
+DLG
+---------------
+- Need to parse dlgFile.flags 
+
+
+---------------
+ARE
+---------------
+
+
+---------------
+Graphics Shift
+---------------
+
+In a picture frame with a case of the following situation:
+
+HH = HEIGHT of frame
+WW = WIDTH of frame
+
+sx = size of picture width
+sy = size of picture height
+
+px = point x that you want to centralise
+py = point y that you want to centralise
+
+Then the offset from top & left are:
+
+top  = py - HH/2 + dy == 0 | py - HH/2 | sy - HH
+left = px - WW/2 + dx == 0 | px - WW/2 | sx - WW
+
+where:
+if the boundaries are not reached, then d = d = 0
+
+if top boundary is reached, ie. p < H/2 then d = H/2-p
+
+if bottom boundary is reached, ie. (s - p) < H/2 then d = -[H/2-(s-p)]
+

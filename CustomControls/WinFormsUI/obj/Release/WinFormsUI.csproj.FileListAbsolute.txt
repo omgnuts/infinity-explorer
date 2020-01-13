@@ -1,0 +1,13 @@
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\license.txt
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\DockPanel.NET.dll
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\DockPanel.NET.pdb
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\WinFormsUI.csprojResolveAssemblyReference.cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.Resources.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.Strings.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.DockContent.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.DragForm.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.FloatWindow.resources
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\WinFormsUI.csproj.GenerateResource.Cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\WinFormsUI.csproj.CoreCompileInputs.cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\DockPanel.NET.dll
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\WinFormsUI\obj\Release\DockPanel.NET.pdb

@@ -1,0 +1,84 @@
+
+foreach(MyEnum in Enum.GetValues(typeof(MyEnum)))
+
+---------------------------
+// String to Char
+---------------------------
+	string s = "23456";
+	char[] a = s.ToCharArray();
+
+---------------------------
+// Hexadecimal
+---------------------------
+int x = 10;
+string s = x.ToString("Hex: {0:X}"); // for upper case hexa
+string s = x.ToString("Hex: {0:x}"); // for lower case hexa
+
+public string IntToHex(int number)
+{
+    return String.Format("{0:x}", number);
+}
+
+public int HexToInt(string hexString)
+{
+    return int.Parse(hexString,
+        System.Globalization.NumberStyles.HexNumber, null);
+}
+
+---------------------------
+// Enums
+---------------------------
+
+int x = (int)Days.Sun;
+
+public T NumToEnum<T>(int number)
+{
+   return (T)Enum.ToObject(typeof(T), number);
+}
+
+
+---------------------------
+// Enum Flags / allows AND condition
+---------------------------
+
+[Flags]public enum CarOptions
+{
+    SunRoof = 0x01,
+    Spoiler = 0x02,
+    FogLights = 0x04,
+    TintedWindows = 0x08,
+}
+
+class FlagTest
+{
+    static void Main()
+    {
+        CarOptions options = CarOptions.SunRoof | CarOptions.FogLights;
+        Console.WriteLine(options);
+        Console.WriteLine((int)options);
+    }
+}
+
+Binding enums to listboxes
+
+myDropDownList.DataSource = Enum.GetNames( typeof( MyEnum ) ); 
+myDropDownList.DataBind(); 
+
+or like that 
+
+foreach (string item in Enum.GetNames(typeof(MyEnum))) 
+{ 
+int value = (int) Enum.Parse( typeof(MyEnum), item ); 
+ListItem listItem = new ListItem( item, value.ToString() ); 
+ddl1.Items.Add( listItem ); 
+}
+
+----------------------------------------------------------------------
+Things you have tried
+----------------------------------------------------------------------
+(a) super dictionary
+(b) delegate functions
+(c) richtextbox link
+(d) caching of reusable explorers
+(e) user controls
+(f) reading unmanaged binary

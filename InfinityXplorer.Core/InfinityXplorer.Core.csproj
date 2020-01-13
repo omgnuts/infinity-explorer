@@ -1,0 +1,269 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{136D7115-203D-4DB2-8DF6-640A84E82A3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InfinityXplorer.Core</RootNamespace>
+    <AssemblyName>InfinityXplorer</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\_release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\_release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationParameters.cs" />
+    <Compile Include="ApplicationPaths.cs" />
+    <Compile Include="ApplicationRuntime.cs" />
+    <Compile Include="ApplicationService.cs" />
+    <Compile Include="IEStruct_ResHandlers\FlagsBit.cs" />
+    <Compile Include="ResourceControls\General\DataGridList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\General\FlagListItem.cs" />
+    <Compile Include="ResourceControls\General\FlagsBitListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\General\FlagsComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\General\LabelLink.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\General\PointTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\QAREViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\QAREViewer.Designer.cs">
+      <DependentUpon>QAREViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceControls\Specific\QARETreeNode.cs" />
+    <Compile Include="ResourceControls\Specific\QAREViewer.Draw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\Specific\QARETreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\Specific\QAREViewer.Node.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\Specific\QAREToolWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\Specific\QAREToolWin.Designer.cs">
+      <DependentUpon>QAREToolWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceControls\General\RichTextBoxLink.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\IUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\QBCSViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\QBCSViewer.Designer.cs">
+      <DependentUpon>QBCSViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceControls\QDLGViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\QDLGViewer.Designer.cs">
+      <DependentUpon>QDLGViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormResource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormResource.Designer.cs">
+      <DependentUpon>FormResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IECollections\TalkRefCollection.cs" />
+    <Compile Include="IEControls\IXExplorer.cs" />
+    <Compile Include="IEControls\IXTreeNode.cs" />
+    <Compile Include="IEControls\IXTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IEControls\IXExplorerDictionary.cs" />
+    <Compile Include="IEStruct_ResHandlers\Flags.cs" />
+    <Compile Include="IEStruct_ResHandlers\ResourceClass.cs" />
+    <Compile Include="IEStruct_ResHandlers\ResourceStruct.cs" />
+    <Compile Include="IEStruct_ResHandlers\ResourceHandler.cs" />
+    <Compile Include="ResourceControls\Specific\QDLGTreeNode.cs" />
+    <Compile Include="ResourceControls\General\ScrollPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourceControls\General\ScrollPictureBox.Designer.cs">
+      <DependentUpon>ScrollPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\TalkIndex.cs" />
+    <Compile Include="GlobalDefs.cs" />
+    <Compile Include="Forms\FormExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormExplorer.Designer.cs">
+      <DependentUpon>FormExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormWorkbench.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormWorkbench.Designer.cs">
+      <DependentUpon>FormWorkbench.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormWorkbench.PartialClasses\FormWorkbench.Helper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormWorkbench.PartialClasses\FormWorkbench.Docker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfinityXplorerMain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ResourceControls\QAREViewer.resx">
+      <DependentUpon>QAREViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceControls\QBCSViewer.resx">
+      <DependentUpon>QBCSViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceControls\QDLGViewer.resx">
+      <DependentUpon>QDLGViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormResource.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormResource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormExplorer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormWorkbench.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWorkbench.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceControls\Specific\QAREToolWin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QAREToolWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceControls\General\ScrollPictureBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="IECollections\ChitinBiffCollection.cs" />
+    <Compile Include="IECollections\ChitinKeyDictionary.cs" />
+    <Compile Include="IECollections\ChitinKeySuperDictionary.cs" />
+    <Compile Include="Sources\FileReader.cs" />
+    <Compile Include="IEStruct_ResHandlers\FileStruct.cs" />
+    <Compile Include="Sources\ChitinIndex.cs" />
+    <Compile Include="Sources\XORStream.cs" />
+    <Compile Include="Utils.cs" />
+    <Content Include="_DesignNotes\Bitmapdata_full.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_DesignNotes\Bitmapdata.txt" />
+    <Content Include="_DesignNotes\Bitmapdata_full2.txt" />
+    <Content Include="_DesignNotes\Bitmapnotes.txt" />
+    <Content Include="_DesignNotes\ChitinOperations.txt" />
+    <Content Include="_DesignNotes\DockPanel-Modifications.txt" />
+    <Content Include="_DesignNotes\ExplorerTree.txt" />
+    <Content Include="_DesignNotes\CSharp-refs.txt" />
+    <Content Include="_DesignNotes\FlagsBitPropertyGrid.txt" />
+    <Content Include="_DesignNotes\ScrollingPictureBox.txt" />
+    <Content Include="_DesignNotes\TODO.txt" />
+    <Content Include="_DesignNotes\VStudio.txt" />
+    <Content Include="_DesignNotes\Zlib-Fix.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomControls\WinFormsUI\WinFormsUI.csproj">
+      <Project>{C75532C4-765B-418E-B09B-46D36B2ABDB1}</Project>
+      <Name>WinFormsUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomControls\ZLib\ZLib.csproj">
+      <Project>{0C89B7A2-A218-49E4-B545-5B044A45F977}</Project>
+      <Name>ZLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

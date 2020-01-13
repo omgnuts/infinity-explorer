@@ -1,0 +1,22 @@
+---------------------------
+// Chitin.key / biff / dialog
+---------------------------
+
+If you want to build the chitin.key file, you need a BIFF-CHITIN relationship
+just do a one-time pass in the chitinkey and use an collection of biffLists 
+and add each chitinkey to the relevant arraylist. 
+
+you only need to do this at the end of the day, with a clean-up function.
+
+NEVER LOAD UP THE BIFF->CHITIN relationship at the start of the program. 
+as most operations wouldn't need this link.
+
+At present the CHITIN-BIFF relationship is available in the ChitinSuperDick
+
+---------------------------
+// Biff Files
+---------------------------
+
+- need a relook at the way caching should be done for cd-biffs
+- what is cdmask??
+- how to extract BIFC - compressed files? zlib c#

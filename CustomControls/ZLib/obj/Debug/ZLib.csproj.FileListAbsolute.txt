@@ -1,0 +1,11 @@
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\ZLib.NET.dll
+F:\Games.Mods\Infinity\code\Infinity Xplorer\_release\ZLib.NET.pdb
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\ZLib\obj\Debug\ZLib.csproj.CoreCompileInputs.cache
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\ZLib\obj\Debug\ZLib.NET.dll
+F:\Games.Mods\Infinity\code\Infinity Xplorer\CustomControls\ZLib\obj\Debug\ZLib.NET.pdb
+E:\Gitspace\baldursgate-infinitycore-v2\_release\ZLib.NET.dll
+E:\Gitspace\baldursgate-infinitycore-v2\_release\ZLib.NET.pdb
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\ZLib\obj\Debug\ZLib.csprojResolveAssemblyReference.cache
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\ZLib\obj\Debug\ZLib.csproj.CoreCompileInputs.cache
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\ZLib\obj\Debug\ZLib.NET.dll
+E:\Gitspace\baldursgate-infinitycore-v2\CustomControls\ZLib\obj\Debug\ZLib.NET.pdb

@@ -1,0 +1,9 @@
+bin\Release\TestCS.exe
+bin\Release\TestCS.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\TestCS.Form1.resources
+obj\Release\TestCS.Form2.resources
+obj\Release\TestCS.Properties.Resources.resources
+obj\Release\TestCS.csproj.GenerateResource.Cache
+obj\Release\TestCS.exe
+obj\Release\TestCS.pdb

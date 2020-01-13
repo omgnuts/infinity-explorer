@@ -1,0 +1,55 @@
+WeifenLuo Docking Panel Suite
+
+FloatWindow.cs
+{
+            //--------- BigMoshi.Start Edit ---------//
+            // to fix the problem when loaded floating windows
+            this.TopMost = true;
+            //--------- BigMoshi.End Edit ---------//
+}
+
+DockContent.cs
+{
+        //--------- BigMoshi.Start Edit ---------//
+        // This is to recognise the explorer form by an id instead of the 
+        // the typeof() form. That way you can create more instances of content
+        // using the same FormExplorer class. 
+        protected string contentId;
+
+        [SuppressMessage("Microsoft.Design", "CA1024:UsePropertiesWhereAppropriate")]
+        protected virtual string GetPersistString()
+		{
+            return contentId; 
+            //return GetType().ToString();
+		}
+
+        //--------- BigMoshi.End Edit ---------//
+
+}
+
+DockPanel.Persistor.cs
+{
+                    //--------- BigMoshi.Start Edit ---------//
+                    // To prevent loading of hidden windows
+                    // by loading a dummy content for hidden windows
+                    // which are subsequently closed. 
+
+                    IDockContent content;
+                    if (contents[i].IsHidden)
+                    {
+                        content = new DummyContent();
+                    }
+                    else
+                    {
+                        content = deserializeContent(contents[i].PersistString);
+                        if (content == null)
+                            content = new DummyContent();
+                    }
+
+                    content.DockHandler.DockPanel = dockPanel;
+                    content.DockHandler.AutoHidePortion = contents[i].AutoHidePortion;
+                    content.DockHandler.IsHidden = true;
+                    content.DockHandler.IsFloat = contents[i].IsFloat;
+
+                    //--------- BigMoshi.End Edit ---------//
+}

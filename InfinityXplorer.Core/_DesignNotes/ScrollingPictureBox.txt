@@ -1,0 +1,3 @@
+default pictureboxes don't provide scrolling features properly.
+
+so just make a usercontrol for a scrolling picture box.

@@ -1,0 +1,5 @@
+Added:
+z.istate.mode = 0; // -- BIGMOSHI -- // To reset state mode
+to function Write(System.Byte[] b1, int off, int len)
+in ZOutputStream to reset the state mode, else there will be an
+endless loop
