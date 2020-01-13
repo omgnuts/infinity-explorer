@@ -1,0 +1,52 @@
+Infinity Explorer 0.8pre
+------------------------
+
+Written by Dmitry Jemerov <yole@yole.ru>
+Homepage: http://infexp.sourceforge.net
+
+
+Infinity Explorer is a game data browser for games built with the BioWare
+Infinity Engine. It supports four games using that engine, namely
+Baldur's Gate, Planescape: Torment, Icewind Dale and Baldur's Gate 2: Shadows
+of Amn.
+
+This release is the last version of Infinity Explorer to be ever released
+by me. It is unfinished and untested, but it contains several new features
+that I developed after the release of the version 0.75. The main reason for
+this release is constant pinging by Jason Compton, so thank him if you
+find it useful.
+
+The current version of Infinity Explorer can display the following types of
+game data:
+
+ * Dialogs (*.DLG);
+ * AI scripts (*.BSC);
+ * Static graphics (*.MOS, *.BMP);
+ * Animations (*.BAM);
+ * Area maps (*.MAP);
+ * Area contents (*.ARE);
+ * Text data files (*.INI, *.2DA, *.IDS);
+ * Creatures (*.CRE);
+ * Items (*.ITM);
+ * Spells (*.SPL);
+ * User interface screens (*.CHU);
+ * World maps (*.WMP);
+ * Store files (*.STO);
+ * Savegames;
+ * Planescape: Torment quests.
+
+Infinity Explorer supports exporting graphics to the following formats:
+
+ * Windows Bitmap (*.BMP);
+ * Animated GIF (*.GIF);
+ * JPEG (*.JPG).
+
+Infinity Explorer is written in Delphi 7 and distributed under GNU General
+Public License. This means that the full source code of the program is
+available for download.
+
+The Infinity Engine File Format Hacking Project
+<http://www.ugcs.caltech.edu/~jedwin/baldur.html>
+by Eddy L O Jansson, Petr Zahradnik and Jed Wing is a great source of
+information about the internals of Infinity Engine. Much of the information
+I used when developing Infinity Explorer comes from that site.
